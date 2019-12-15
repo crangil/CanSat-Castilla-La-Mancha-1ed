@@ -12,11 +12,13 @@
 #include <TinyGPS++.h>
 #include <Wire.h>
 #include <Adafruit_BMP085.h>    //Librería del BMP180
+//#include <Adafruit_BMP280.h>    //Librería del BMP280
 
 SoftwareSerial radio(6, 7); // RX, TX   Radio APC220 
 SoftwareSerial ss(4, 3);    // RX, TX   Recepción GPS Neo6M
 
 Adafruit_BMP085 bmp;        // BMP180
+//Adafruit_BMP280 bmp;      // BMP280
 TinyGPSPlus gps;            // GPS Neo6M
 
 void setup() {
